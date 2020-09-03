@@ -28,5 +28,14 @@ file {'/tmp/it_work.txt':                               # resource type file and
     content =. "It works on ${ipaddress_eth0}!\n",      # Print the eth0 IP fact
 }
 
-
 sudo systemctl restart puppetmaster
+
+//Puppet Agent
+sudo apt-get update
+sudo apt-get install wget
+wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+sudo dpkg -i puppet-release-bionic.deb
+sudo apt-get install puppet
+
+sudo systemctl start puppet
+sudo systemctl enable puppet
