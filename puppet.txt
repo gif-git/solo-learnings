@@ -1,0 +1,31 @@
+On Master :
+sudo apt-get update
+sudo apt-get install wget
+wget https://apt.puppetlabs.com/puppet-release-bionic.deb ### its not work
+
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+sudo dpkg -i puppetlabs-release-pc1-xenial.deb
+sudo apt-get update -y
+
+wget https://apt.puppetlabs.com/puppet-release-xenial.deb
+
+sudo apt-get install puppetmaster
+sudo apt policy puppetmaster
+sudo systemctl status puppetmaster
+vim /etc/default/puppetmaster
+ -- JAVA_ARGS="-Xms512m -Xmx512m"
+sudo systemctl restart puppetmaster
+
+sudo ufw allow 8140/tcp
+
+//change code
+sudo mkdir -p /etc/puppet/code/envirnments/production/manifests/
+sudo vim /etc/puppet/code/envirnments/production/manifests/site.pp
+file {'/tmp/it_work.txt':                               # resource type file and filen
+    ensure => present,                                  # make sure it exists
+    mode   => '0644',                                   # file permissions
+    content =. "It works on ${ipaddress_eth0}!\n",      # Print the eth0 IP fact
+}
+
+
+sudo systemctl restart puppetmaster
