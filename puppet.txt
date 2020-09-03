@@ -20,12 +20,12 @@ sudo systemctl restart puppetmaster
 sudo ufw allow 8140/tcp
 
 //change code
-sudo mkdir -p /etc/puppet/code/envirnments/production/manifests/
-sudo vim /etc/puppet/code/envirnments/production/manifests/site.pp
+sudo mkdir -p /etc/puppet/code/environments/production/manifests/
+sudo vim /etc/puppet/code/environments/production/manifests/site.pp
 file {'/tmp/it_work.txt':                               # resource type file and filen
-    ensure => present,                                  # make sure it exists
-    mode   => '0644',                                   # file permissions
-    content =. "It works on ${ipaddress_eth0}!\n",      # Print the eth0 IP fact
+    ensure  => present,                                 # make sure it exists
+    mode    => '0644',                                  # file permissions
+    content => "It works on ${ipaddress_eth0}!\n",      # Print the eth0 IP fact
 }
 
 sudo systemctl restart puppetmaster
@@ -39,3 +39,44 @@ sudo apt-get install puppet
 
 sudo systemctl start puppet
 sudo systemctl enable puppet
+
+//On Puppet Master
+
+sudo puppet cert sign --all
+
+//On Puppet Agent
+
+sudo puppet agent --test
+
+
+
+
+
+
+
+
+
+
+
+
+deficults:
+
+root@user-client1:/tmp# sudo systemctl status puppet
+● puppet.service - Puppet agent
+   Loaded: loaded (/lib/systemd/system/puppet.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2020-09-03 21:06:18 IST; 5s ago
+  Process: 7673 ExecStart=/usr/bin/puppet agent $DAEMON_OPTS (code=exited, status=0/SUCCESS)
+ Main PID: 7686 (puppet)
+   CGroup: /system.slice/puppet.service
+           └─7686 /usr/bin/ruby /usr/bin/puppet agent
+
+Sep 03 21:06:19 user-client1 puppet-agent[7690]: Unable to fetch my node definition, but the agent run will continue:
+Sep 03 21:06:19 user-client1 puppet-agent[7690]: Server hostname 'puppet' did not match server certificate; expected user-server
+Sep 03 21:06:19 user-client1 puppet-agent[7690]: (/File[/var/lib/puppet/facts.d]) Failed to generate additional resources using 'eval_generate': Server hostname 'puppet' did not match serve
+Sep 03 21:06:19 user-client1 puppet-agent[7690]: (/File[/var/lib/puppet/facts.d]) Could not evaluate: Could not retrieve file metadata for puppet://puppet/pluginfacts: Server hostname 'pupp
+Sep 03 21:06:19 user-client1 puppet-agent[7690]: (/File[/var/lib/puppet/lib]) Failed to generate additional resources using 'eval_generate': Server hostname 'puppet' did not match server ce
+Sep 03 21:06:19 user-client1 puppet-agent[7690]: (/File[/var/lib/puppet/lib]) Could not evaluate: Could not retrieve file metadata for puppet://puppet/plugins: Server hostname 'puppet' did
+Sep 03 21:06:23 user-client1 puppet-agent[7690]: Could not retrieve catalog from remote server: Server hostname 'puppet' did not match server certificate; expected user-server
+Sep 03 21:06:23 user-client1 puppet-agent[7690]: Using cached catalog
+Sep 03 21:06:23 user-client1 puppet-agent[7690]: Could not retrieve catalog; skipping run
+Sep 03 21:06:23 user-client1 puppet-agent[7690]: Could not send report: Server hostname 'puppet' did not match server certificate; expected user-server

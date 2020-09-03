@@ -1,7 +1,7 @@
 On Master:
 sudo apt-get update
 sudo apt-get install wget
-wget htts://apt.puppetlabs.com/puppet-releses-bionic.deb
+wget https://apt.puppetlabs.com/puppet-release-bionic.deb
 sudo dpkg -i puppet-replease-bionic.deb
 sudo apt-get  update
 sudo apt-get install puppetmaster

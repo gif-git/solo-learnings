@@ -1,0 +1,5 @@
+To list slave certificate on puppet master server
+sudo puppet cert list
+
+To sign the puppet agent key:
+sudo puppet cert sign --all 
