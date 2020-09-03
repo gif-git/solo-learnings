@@ -19,8 +19,6 @@ sudo systemctl restart puppetmaster
 
 sudo ufw allow 8140/tcp
 
-testing
-
 //change code
 sudo mkdir -p /etc/puppet/code/envirnments/production/manifests/
 sudo vim /etc/puppet/code/envirnments/production/manifests/site.pp
