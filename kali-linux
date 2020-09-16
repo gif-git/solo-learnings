@@ -4,3 +4,7 @@ system  solo/win
 cp ls pwd cp mv cat less grep echo touch mkdir chown chmod rm man + help
 
 cp -v 
+
+kali linux default repositories:
+deb http://http.kali.org/kali main non free contrib
+deb http://socurity.kali.org/kali security kali/update main contrib non free
