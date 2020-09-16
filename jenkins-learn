@@ -58,5 +58,27 @@ what it is not
 - building using IDES/command line
 - developer braches
 
-31:51
+Development without CI (contd)
+- power quality code
+- lack of team cohesion
+- Harder to fix issues
+- poor project visiblity
+- lack of deployable software
+- high maintenance costs
+- project delays
+
+automated build
+automated tests
+automated code metrics
+
+reguler commits
+
+code repository
+
+dedicated build server
+
+test server -> automated releases
+
+1:00:41
+
 
