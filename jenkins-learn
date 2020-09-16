@@ -1,0 +1,62 @@
+build automation
+continuous integration
+
+Module 1
+an overview of jenkins
+
+Module 2
+getting started with jenkins
+
+Module 3
+plugins and its uses
+
+Module 4
+setting up your build jobs
+
+Module 5
+setting up build jobs and security
+
+Module 6 
+implementing autoobjectivesmated testing
+
+module 7
+using metrics to improve quality
+
+Module 8
+nodes and master-slave configuration
+
+Module 9
+maintain and use jenkins
+
+Module 10
+performing automated deployment and continuous delivery
+
+Objectives:-
+at the end of this module, you will be able to 
+- understand what is meant by continuous integration
+- understand benefits of using CI for the organization
+- get an overview of CI Tools
+- Understand basic concept of jenkins
+
+continuous integration (contd.)
+as defined by martin fowler,
+- in software engineering, continuous integration (ci) implementings continuous processes of appliying 
+quality control -small pieces of effort, applied frequently
+- conbinuous integration aims to improve the quality of software and to reduce the 
+time taken to deliver
+- this is done by replacing the traditional practice of appliying quality controla
+after completing the development continuous integration
+
+what is CI ?
+what it is 
+- a development methodology
+- of daily developer integrations
+- verified by automated buils
+
+what it is not
+- nightly builds
+- building using IDES/command line
+- developer braches
+
+31:51
+
