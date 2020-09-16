@@ -1,0 +1,7 @@
+nano filename.txt
+wright some text
+^= control
+
+^+o = wright
+^+w = 
+
