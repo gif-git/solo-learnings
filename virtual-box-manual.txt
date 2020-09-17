@@ -4,4 +4,4 @@ https://hibbard.eu/install-ubuntu-virtual-box/
 
 ubuntu 16 
 system name puppet-virtual
-passwd: server
+passwd: ser
