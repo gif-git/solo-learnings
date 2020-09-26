@@ -1,0 +1,4 @@
+Change the path for storage:
+C:\Users\<username>\AppData\Roaming\Thunderbird\Profiles\bze781zt.default-release\ImapMail\imap.gmail.com
+
+J:\Mail-client-path\Thunderbird\Profiles\bze781zt.default-release\ImapMail\imap.gmail.com
