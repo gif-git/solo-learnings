@@ -9,3 +9,11 @@ kali linux default repositories:
 deb http://http.kali.org/kali main non free contrib
 deb http://socurity.kali.org/kali security kali/update 
 
+basic terminology such as white hat,gray hat, and black hat hacking
+white/grey/black hat hackers
+footprinting, Dos (just you)
+DDos ( multiple people )
+FUD Fully undectable ( auti-viruss can not detect)
+RAT Remote administration tools, Fishing, SQL Injections, VPN
+Key loggers, Terminal, Firewall, Root Kit, Reverse-shells
+*199*2*2#

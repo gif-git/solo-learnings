@@ -5,3 +5,16 @@ https://hibbard.eu/install-ubuntu-virtual-box/
 ubuntu 16 
 system name puppet-virtual
 passwd: server
+
+virtual box full screen setup:
+apt-get update
+go to - devices- click insert Guest additional CD images -click Run
+second settings:
+go to - select ubuntu-os- settings- general- advance - in the advance 
+shared clipboard -Bidirectional
+Drag'n'Drop -Bidirectional
+
+if you face any issue like gcc error run the following:
+sudo apt-get install build-essential gcc make perl dkms.
+
+sudo apt install linux-headers-$(uname -r) build-essential dkms
