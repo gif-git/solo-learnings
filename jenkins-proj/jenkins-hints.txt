@@ -1,0 +1,35 @@
+cmd
+cd Desktop\solo-learnings\jenkins-proj
+C:\Users\admin\Desktop\solo-learnings\jenkins-proj>
+java -jar jenkins.war --httpPort=9191 --enable-future-java
+
+http://localhost:9191/
+solo/winner
+
+localhost:9191
+pwd
+3f3224d3928346539a1fc5bba0283ffc
+
+Parametrize job
+syntax
+Windows -%parametername%
+*unx/mac - $parametername
+	   ${parametername}
+	   "${parametername}"
+
+____________
+jenkins cli
+
+build:
+java -jar jenkins-cli.jar -s http://localhost:9191/ -webSocket build jobname
+java -jar jenkins-cli.jar -s http://localhost:9191/ -webSocket build sample job 1 -v
+
+
+
+Errors and fix:
+
+error:
+jenkins requests java versions 8 11 but you are running with java 15 from
+--enable-future-java	# use this command to fix that error
+--httpPort=9191 	# this will enable the port 9191, jenkins will run this port
+
