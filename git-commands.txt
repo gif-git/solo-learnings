@@ -2,3 +2,27 @@ git commands:
 
 git init
 git add . # this command will add files and folder on the corrent working directory 
+git status
+git 
+
+
+
+
+Errors:
+
+admin@Lirel MINGW64 ~/Desktop/solo-learnings (master)
+$ git push
+To https://github.com/gif-git/solo-learnings.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gif-git/solo-learnings.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+admin@Lirel MINGW64 ~/Desktop/solo-learnings (master)
+--------fix and resolve 
+to fix this error we need to run git pull command
+before run the command we need to copy the repo to alother place for (backup)
+--------
