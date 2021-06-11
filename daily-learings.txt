@@ -4,6 +4,15 @@ Need to Work Hard!
 
 Today-11-June2021
 git diff command and reset command try to learn
+ 
+how to check root doc folder in apache2 conf:
+cat /etc/apache2/sites-available/000-default.conf
+ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html
+___________
+git:
+git reset --soft <commit id from git log> # this command only clear the git commit log in <git log> command
+git reset --hard <commit id from git log> # this command clear the git log as well as file entres
 
 
 
