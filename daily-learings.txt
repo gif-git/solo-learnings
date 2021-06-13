@@ -32,5 +32,5 @@ trying to creat web folder with username password by apache, ----- not yet finis
 need to work on tomorrow
 *
 * Git 
-in windows git bash, 
+On windows git bash, 
 cd ~/Desktop/solo-learnings # this command will leads to my git working folder
