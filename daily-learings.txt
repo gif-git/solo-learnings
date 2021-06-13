@@ -1,5 +1,11 @@
 Need to Work Hard!
 
+Today-12-June2021
+sudo a2enmod authz_groupfile
+service apache2 restart
+apachectl -M | grep "authz_groupfile" # This command will show us module is enable or not 
+
+
 
 
 Today-11-June2021
