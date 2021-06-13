@@ -30,3 +30,7 @@ Today-10June2021
 udateing google chrome
 trying to creat web folder with username password by apache, ----- not yet finish
 need to work on tomorrow
+*
+* Git 
+in windows git bash, 
+cd ~/Desktop/solo-learnings # this command will leads to my git working folder
