@@ -14,6 +14,13 @@ localhost:9191
 pwd
 3f3224d3928346539a1fc5bba0283ffc
 
+C:\apache-tomcat-8.5.66\webapps\mvnwebapp
+webserver folder
+C:\apache-tomcat-8.5.66\conf\tomcat-user
+webserver folder this is user arth file
+
+
+
 Parametrize job
 syntax
 Windows -%parametername%
