@@ -1,7 +1,11 @@
 cmd
 cd Desktop\solo-learnings\jenkins-proj
 C:\Users\admin\Desktop\solo-learnings\jenkins-proj>
+to start jenkins:
+cd C:\Users\admin\Desktop\solo-learnings\jenkins-proj\
 java -jar jenkins.war --httpPort=9191 --enable-future-java
+to start tomcat:
+c:\apache-tomcat-8.5.66\bin>startup.bat
 
 http://localhost:9191/
 solo/winner

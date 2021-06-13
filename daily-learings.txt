@@ -4,10 +4,28 @@ Need to Work Hard!
 
 
 
-
+----------------------------------------------
 Today-13-June2021
+maven installation in windows
+site: https://www.youtube.com/watch?v=oTRmukUvB50
+M2_HOME
+C:\apache-maven-3.8.1
+
+MAVEN_HOME
+C:\apache-maven-3.8.1\bin
+
+system var in java path
+C:\apache-maven-3.8.1\bin
+to check:
+cmd: echo %M2_HOME% or mvn -version
+
+apache tomcat
+tomcat error at startup:
+Neither the JAVA_HOME nor the JRE_HOME environment variable is defined
 
 
+java jdk
+https://crunchify.com/how-to-setup-configure-java-home-and-jre-home-environment-variables-on-windows/
 ----------------------------------------------
 Today-12-June2021
 sudo a2enmod authz_groupfile # to enable apache module
