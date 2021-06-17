@@ -1,11 +1,13 @@
 Need to Work Hard!
 
 
+
+Today-17-June2021
+
+
 Today-16-June2021
-start learning puppet 
-
-
-
+start learning puppet rajkumar
+start learning python with ashok
 
 Today-14-June2021
 git commit --amend -m "New commit message."   # https://linuxize.com/post/change-git-commit-message/
