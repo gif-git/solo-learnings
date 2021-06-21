@@ -13,7 +13,7 @@ print ('the type of ',a, type(a))
 a=[1,'a','python',4.6]
 print ('the type of ',a, type(a))
 
-a=(1,'a','python',4.6]
+a=(1,'a','python',4.6)
 print ('The type of ',a, type(a))
 
 a={'name':'aaa', 'dept':'bbb'}
