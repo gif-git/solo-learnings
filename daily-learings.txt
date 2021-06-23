@@ -1,5 +1,9 @@
 Need to Work Hard!
 
+Today-23-June-2021
+learing how to check version in docker containers 
+understanding, iteration
+
 
 Today-18-June2021
 today learing with lokesk about git branch
