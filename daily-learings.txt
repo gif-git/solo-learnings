@@ -1,5 +1,19 @@
 Need to Work Hard!
 
+
+Today-03-July-2021
+
+
+
+Today-02-July-2021
+* pfsense
+changing the public ip, first change the gatway to working gateway, then disable role in LAN, then edit and remove the gateway from gateway groups,
+go to interface change the ip to new public ip save changes, Then create a network group and enable the role in LAN
+* pfsense
+we can use domain name in openvpn instead of static ip
+- benefits: we can user 2 static ip if one gets down onother one will take care openvpn will not affected
+- if the public ip will changed not need to update the static ip in client side
+
 Today-26-June-2021
 CSRF Cross-Site Request Forgery
 
@@ -12,7 +26,6 @@ understanding, iteration
 Today-18-June2021
 today learing with lokesk about git branch
 Python pratice
-
 
 
 Today-17-June2021
