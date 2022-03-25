@@ -1,0 +1,54 @@
+RDBMS:
+MySql 
+
+show databases;  # To view, what are the databases are available 
+create database info;  # To create database (database name info)
+use info;  # To use the databases;
+create table Emp<Name varchar<30>,City varchar<20>,Salary int<5>,Emp_Number int<5>,Address varchar<40>,Dept_Name varchar<20>>;  # To create and update the table (Emp table)
+describe Emp;  # To see what are the information in the Emp table
+insert into Emp values<'Raja','Tambaram',23000,101,'Vinayaga Nagar','IT'>;
+insert into Emp values<'Ram','Porur',21000,102,'Shenoy Nagar','CT'>;
+insert into Emp values<'Radha','Pummal',26000,103,'Bharathi Nagar','EEE'>;
+insert into Emp values<'Karthick','Pallavaram',25000,104,'Kanadhasan Nagar','ECE'>;
+
+select * from Emp; # To see what are the information in the update table
+
+select name from Emp where City='Tambaram';
+select Dept_Name from Emp where Name='Raja';
+select Name from Emp where Salary='21000';
+
+alter table Emp add Increment int<6>; 
+alter table Emp add Decrement int<6>; 
+
+update Emp set Increment=2000;
+update Emp set Decrement=1000;
+
+update Emp set Increment=2000;
+update Emp set Decrement=1000;
+
+update Emp set Salary=Salary+Increment;
+update Emp set Salary=Salary-Decrement;
+
+show tables;
+create table info (name varchar(20), lastname varchar(20), age int(2));
+create table Emp (Name varchar(30), City varchar(20), Salary int(5), Emp_Number int(5), Address varchar(40), Dept_Name varchar(20));
+insert into Emp values('Raja','Tambaram',23000,101,'Vinayaga Nagar','IT');
+insert into Emp values('Ram','Porur',21000,102,'Shenoy Nagar','CT');
+insert into Emp values('Radha','Pummal',26000,103,'Bharathi Nagar','EEE');
+insert into Emp values('Karthick','Pallavaram',25000,104,'Kanadhasan Nagar','ECE');
+
+alter table Emp add Increment int(6); 
+
+describe info;
+insert into info values ('gif', 'solo', 34);
+select * from info;
+
+MySQL [testdb]> select * from info
+    -> ;
++------+----------+------+
+| name | lastname | age  |
++------+----------+------+
+| gif  | solo     |   34 |
++------+----------+------+
+1 row in set (0.00 sec)
+
