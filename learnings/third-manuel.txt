@@ -16,6 +16,17 @@ select * from Emp; # To see what are the information in the update table
 select name from Emp where City='Tambaram';
 select Dept_Name from Emp where Name='Raja';
 select Name from Emp where Salary='21000';
+_______________________________________
+select name from Emp where salary is between 20000 and 30000 and City ='Tambaram';
+
+select name from Emp where near like 'A%' or name like 'B%' order by employee name;
+
+select name from Emp where salary is not between 5000 and 1000 and City='Chennai';
+
+select name from Emp where name like 'A%A';
+
+
+________________________________________
 
 alter table Emp add Increment int<6>; 
 alter table Emp add Decrement int<6>; 
