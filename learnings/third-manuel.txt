@@ -6,6 +6,23 @@ create database info;  # To create database (database name info)
 use info;  # To use the databases;
 create table Emp<Name varchar<30>,City varchar<20>,Salary int<5>,Emp_Number int<5>,Address varchar<40>,Dept_Name varchar<20>>;  # To create and update the table (Emp table)
 describe Emp;  # To see what are the information in the Emp table
+
+mysql> describe Emp;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| Name       | varchar(30) | YES  |     | NULL    |       |
+| City       | varchar(20) | YES  |     | NULL    |       |
+| Salary     | int(5)      | YES  |     | NULL    |       |
+| Emp_Number | int(5)      | YES  |     | NULL    |       |
+| Address    | varchar(40) | YES  |     | NULL    |       |
+| Dept_Name  | varchar(20) | YES  |     | NULL    |       |
+| Increment  | int(6)      | YES  |     | NULL    |       |
+| Decrement  | int(6)      | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+
 insert into Emp values<'Raja','Tambaram',23000,101,'Vinayaga Nagar','IT'>;
 insert into Emp values<'Ram','Porur',21000,102,'Shenoy Nagar','CT'>;
 insert into Emp values<'Radha','Pummal',26000,103,'Bharathi Nagar','EEE'>;
