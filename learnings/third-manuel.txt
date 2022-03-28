@@ -50,16 +50,17 @@ insert into Emp values('Karthick','Pallavaram',25000,104,'Kanadhasan Nagar','ECE
 
 alter table Emp add Increment int(6); 
 
-describe info;
-insert into info values ('gif', 'solo', 34);
-select * from info;
+mysql> select * from Emp;
++----------+------------+--------+------------+------------------+-----------+-----------+-----------+
+| Name     | City       | Salary | Emp_Number | Address          | Dept_Name | Increment | Decrement |
++----------+------------+--------+------------+------------------+-----------+-----------+-----------+
+| Raja     | Tambaram   |  24000 |        101 | Vinayaga Nagar   | IT        |      2000 |      1000 |
+| Ram      | Porur      |  22000 |        102 | Shenoy Nagar     | CT        |      2000 |      1000 |
+| Radha    | Pummal     |  27000 |        103 | Bharathi Nagar   | EEE       |      2000 |      1000 |
+| Karthick | Pallavaram |  26000 |        104 | Kanadhasan Nagar | ECE       |      2000 |      1000 |
++----------+------------+--------+------------+------------------+-----------+-----------+-----------+
+4 rows in set (0.00 sec)
 
-MySQL [testdb]> select * from info
-    -> ;
-+------+----------+------+
-| name | lastname | age  |
-+------+----------+------+
-| gif  | solo     |   34 |
-+------+----------+------+
-1 row in set (0.00 sec)
+
+
 
