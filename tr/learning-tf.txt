@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Terraform installation 
+Hashicorp Configuration Language Structure
+
+resource "aws_instance" "myec2" {
+ami = "ami-image id "
+instance_type = "t2.micro"
+}
+
+Creating first EC2 instance with Terraform
+terraform init
+terraform plan
+terraform apply
+terraform show
+
+provider "aws" {
+region	   = "us-east-1"
+access_key = "PUT-YOUR-ACCESS-KEY-HERE"
+secret_key = "PUT-YOUR-SECRET-KEY-HERE"
+}
+__________________________________________________
+Terraform = Infrastructure Provisioning Tool 
+
+Why Infrastructure As Code IAC?
+ -Manual ---> Automate from Code
+
+What is Terraform ?
+ - Tool for building, changing, and versioning infrastructure safely and efficiently.
+ - Free and opensource IAC tool build by Hashicorp
+      written by Hasicorp Configuration Language (HCL)
+
+Why Terraform?
+Cloudformation only in AWS
+Ansible Mainly config, mutable(fast), Procedural (order/nostate/notreusable)
+Terraform mainly IAAC with 100+ providers Immutable (Slow) Declarative (Noorder/aware-state/reusable)
+
+Terraform Architecture ?
+Core	----- config.tf, state
+Providers ---- aws, azure,GCP ....100+
+
+who will learn Terraform?
+  IAAC -AWS / PAAS - K8S  / SAAS -Github
+  Both Cloud / DevOps Engineers to Learn
