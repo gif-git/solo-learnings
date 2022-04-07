@@ -1,43 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Terraform installation 
-Hashicorp Configuration Language Structure
-
-resource "aws_instance" "myec2" {
-ami = "ami-image id "
-instance_type = "t2.micro"
-}
-
-Creating first EC2 instance with Terraform
-terraform init
-terraform plan
-terraform apply
-terraform show
-
-provider "aws" {
-region	   = "us-east-1"
-access_key = "PUT-YOUR-ACCESS-KEY-HERE"
-secret_key = "PUT-YOUR-SECRET-KEY-HERE"
-}
-__________________________________________________
 Terraform = Infrastructure Provisioning Tool 
 
 Why Infrastructure As Code IAC?
@@ -60,3 +21,28 @@ Providers ---- aws, azure,GCP ....100+
 who will learn Terraform?
   IAAC -AWS / PAAS - K8S  / SAAS -Github
   Both Cloud / DevOps Engineers to Learn
+___________________________________________
+
+Terraform installation 
+Hashicorp Configuration Language Structure
+
+resource "aws_instance" "myec2" {
+	ami = "ami-image id "
+	instance_type = "t2.micro"
+	}
+
+Creating first EC2 instance with Terraform
+terraform init
+terraform plan
+terraform apply
+terraform show
+
+provider "aws" {
+region	   = "us-east-1"
+access_key = "PUT-YOUR-ACCESS-KEY-HERE"
+secret_key = "PUT-YOUR-SECRET-KEY-HERE"
+}
+
+
+
+_____________________________________________

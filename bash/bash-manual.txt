@@ -1,0 +1,140 @@
+Shell - Types
+
+Shell name	 full name
+sh 		bourne shell
+bash 		bourne again shell
+csh		c shell
+tcsh 		tc shell
+ksh		korn shell
+
+Bash - Features
+
+Alias
+command line editing
+advanced pattern matching
+file name completion
+directory stacks
+history
+functions
+key binding
+job control
+spelling correction
+prompt formatting
+
+Bash - Resoonsibility
+
+Reading text and parsing the entered command
+evaluating meta characters such as wild cards, spacial characters or history characters
+process I/O redirection, pipes and background processing
+signal handling
+lnitializing programs for execution
+
+Plan 
+introducing ss concept
+roles about shell and kernel
+dealing eith data & time and calendar
+monitoring process - top & ps
+creation and execution of a script
+scheduling jobs - at & crontab
+help command
+
+
+./
+#! magic number
+echo "Welcome world"  -- inside the "" is called String
+chmod +x welcome
+
+#!/bin/bash
+echo "Hello $LOGNAME"  # System varable
+echo "Welcom to the world of linux automation"
+echo "The host name is `hostname`"
+echo "Your present working directory is `pwd`"
+
+echo "Thank you, see you soon $LOGNAME"
+____________________
+
+at command # at is scheduling the job 
+atq # this command what are the jobs in que will be list
+at 00:41
+at> mkdir /root/script/newfolder # press ctrl +D will be out of the process 
+____________________
+Crontab
+
+crontab -l # to list the cron jobs
+crontab -e # to edit the cron job
+crontab is used for automatic job scheduling
+minute - Hour - Date (Day of month) - Month - Day of week <our command > 
+ 45       10	 4			11     6
+
+* Day of week -0 & 7 = Sunday
+_________________________
+Variables
+
+A variable is a symbolic name of a defined value 
+for Ex: a = 10, "a"=Symbolic name & 10=value
+
+To read the value, we need to put $ sign before the symbolic name ($a)
+
+variables - Types
+Two types 
+
+System variable
+For Ex: $LOGNAME, $HOSTNAME
+
+User Defined variable
+____________________________
+Plan
+
+Introduction variable
+How to set a value to a variable
+how to use quotes in variable
+Our first simple variable script
+Exporting variables
+Read-only variables
+Checking the length of variable
+User input
+Input with text
+Silent input
+
+a=30
+echo $a
+
+a="pradeep kumar"
+echo $a
+
+Ex:
+#!/bin/bash
+
+read -p "Please enter your org name: " org
+read -sp "Enter your network ID: " nw
+read -p "Enter your internet status: " in
+read -p "Enter your server count : " sc
+
+echo "Your Orginization name is $org"
+echo "Your orginization network ID is $nw"
+echo "Internet availability is $in"
+echo "Your Orginization total server count is $sc"
+echo "Thank so much for viewing the details"
+___________________________________
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
