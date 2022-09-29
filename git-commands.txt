@@ -4,6 +4,8 @@ git init
 git add . # this command will add files and folder on the corrent working directory 
 git status
 git 
+git branch
+git merge
 
 
 
